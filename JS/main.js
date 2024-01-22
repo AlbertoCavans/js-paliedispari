@@ -1,7 +1,7 @@
 /* PALINDROMI */
 const word = prompt("Inserisci una parola");
 
-/* REVERSING STRING */
+/* FUNCTION REVERSING STRING */
 function reverseWord(wordToReverse) {
   let reverse = "";
 
@@ -19,3 +19,19 @@ if (word === results) {
 } else {
   console.log("La parola non è palindroma");
 }
+
+/* ODD OR EVEN */
+const userOddEven = prompt("Scrivi pari oppure dispari!");
+console.log(userOddEven);
+const userNumber = parseInt(prompt("Scrivi un numero da 1 a 5!"));
+console.log(userNumber);
+
+/* FUNCTION PC RANDOM NUMBER FROM 1 TO 5 */
+function randomNumber() {
+  const number = Math.floor(Math.random() * 5 + 1);
+
+  return number;
+}
+
+const computerNumber = parseInt(randomNumber());
+console.log(computerNumber);
