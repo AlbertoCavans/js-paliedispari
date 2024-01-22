@@ -35,3 +35,28 @@ function randomNumber() {
 
 const computerNumber = parseInt(randomNumber());
 console.log(computerNumber);
+
+/* FUNCTION NUMBER ODD OR EVEN? */
+let numberOddOrEven = "";
+function oddOrEven(number) {
+  if (number % 2 === 0) {
+    numberOddOrEven += "pari";
+  } else {
+    numberOddOrEven += "dispari";
+  }
+
+  return numberOddOrEven;
+}
+
+/* ADDITION */
+const tot = computerNumber + userNumber;
+console.log(tot);
+const resultOddEven = oddOrEven(tot);
+console.log(numberOddOrEven);
+
+/* RESULT MATCH */
+if (userOddEven === resultOddEven) {
+  console.log("Hai vinto");
+} else {
+  console.log("Hai perso");
+}
